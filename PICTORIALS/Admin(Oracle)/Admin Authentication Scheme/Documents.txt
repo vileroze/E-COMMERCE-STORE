@@ -1,0 +1,5 @@
+1. Authentication scheme 1
+2. Authentication scheme 2
+3. Authentication scheme 3 and so on 
+
+File Type: Database or php   Screenshot

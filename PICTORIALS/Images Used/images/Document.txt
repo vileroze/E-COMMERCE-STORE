@@ -1,0 +1,15 @@
+1. Banner (Folder)
+(Include all the photos for Banner used)
+
+
+2. Categories (Folder)
+(Include all the photos for categories used)
+
+3. Products (Folder)
+(Include all the photos for Products used)
+
+4. Shop Image (Folder)
+(Include all the photos for shop used)
+
+5. Logos
+(include main logo and footer logo used)

@@ -1,0 +1,19 @@
+
+1.trader login
+valid
+invalid
+empty
+2. Trader_order_details
+3. Trader_update_profile
+4. Trader_add product
+5. Trader dashboard
+6. trader product details
+7. trader update product
+8. trader delete product
+9.add offer
+10.delete offer
+11.Trader sign up
+validations
+12.Admin verification
+13.error while sign in or sign up
+File type: Php screenshots

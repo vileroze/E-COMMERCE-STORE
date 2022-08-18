@@ -1,0 +1,16 @@
+Login(invalid , valid)
+
+1. Admin Dashboard
+2. Admin Daily
+3. Admin Login
+4. Admin monthly
+6. Admin weekly
+7. Admin login
+8. Admin Customer_info
+9. Highest sold products
+10.Master Detail Form of shop and products
+11. Master Detail Form of products and reviews of all trader at once.
+
+ Logout
+
+File Type: Database(oracle) Screenshot

@@ -1,0 +1,13 @@
+1. Users Insert
+
+2. Product insert
+(All 5 shop products)
+3. Shop Insert 
+4. Admin Insert
+5. Trader Insert
+6. Collection-slot insert
+
+successful run script and products inserting also available
+
+
+File Type: Database Screenshot of script inserting

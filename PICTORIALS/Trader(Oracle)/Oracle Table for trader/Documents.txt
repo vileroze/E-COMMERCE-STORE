@@ -1,0 +1,20 @@
+shops
+shops data
+users
+users data
+trader
+trader data
+products
+products data
+review
+reviews data
+orders
+orders data including payment date
+basket
+basket products data
+customer
+customer data
+offer
+offer data
+
+File Type: Database screenshot

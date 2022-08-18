@@ -1,0 +1,13 @@
+authentication
+invalid login
+
+dashboard
+daily order report
+montly report
+weekly
+signout
+
+multiple reports of trader
+
+
+File Type: Database Screenshot

@@ -1,0 +1,32 @@
+invalid login
+empty sign in
+invalid sign up
+login
+after login is done
+homepage
+about us
+individual shop
+each shop page
+after ordering a product
+cart
+checkout
+searching product
+sorting product
+collection slot
+paypal payment
+paynow
+payment success
+receipt
+trader invoice
+review(registered customer)
+dashboard
+profile update
+empty cart
+after logout
+
+unregistered cart page
+unregister chekout failed and directe to sign in page
+
+
+
+SCREENSHOTS

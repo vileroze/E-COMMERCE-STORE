@@ -1,0 +1,8 @@
+1. Create script
+2. Run Script
+3. Selecting Script( products ,user ,traders)
+4. Sequence Script
+5. Insert Script
+
+
+File Type: Database Screenshot of create,run and insert script

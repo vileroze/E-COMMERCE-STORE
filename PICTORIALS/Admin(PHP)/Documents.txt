@@ -1,0 +1,14 @@
+SCREENSHOTS
+
+admin login(invalid,valid,empty)
+after login
+dashboard
+profile edit
+Login as traders
+all shops login by admin
+view overall report through oracle
+disable any products from any trader
+ 
+
+
+File Type:  ADMIN (PHP) Screenshot

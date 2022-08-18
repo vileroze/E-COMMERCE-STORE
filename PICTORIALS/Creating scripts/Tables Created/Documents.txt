@@ -1,0 +1,5 @@
+all tables created 
+sequence
+triggers 
+
+File Types: Database screenshot
