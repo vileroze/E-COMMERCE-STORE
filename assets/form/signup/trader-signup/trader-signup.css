@@ -1,0 +1,152 @@
+@import "../../../../globalcss/colors.css";
+@import "../../../../globalcss/fonts.css";
+@import "../../../../globalcss/global.css";
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: var(--primary-font);
+}
+
+.custom-container {
+    background-image: url("../../bg-image/formbg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    min-height: 100vh;
+    width: 100vw !important;
+}
+
+.custom-container i {
+    color: var(--totalcart-color);
+}
+
+.custom-container form fieldset h4 {
+    color: var(--primary-color);
+    word-spacing: 3px;
+}
+
+.custom-container form {
+    padding-top : 5rem;
+}
+
+.custom-container form fieldset .icon-container i {
+    color: var(--totalcart-color);
+    border: 2px solid #bdc3c7;
+    font-size: 1.1rem;
+    padding: 0.5rem 0.6rem;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.custom-container form fieldset .icon-container .fa-facebook-f {
+    padding: 0.5rem 0.7rem;
+}
+
+/** Hover on social media icons **/
+.custom-container form fieldset .icon-container .fa-facebook-f:hover {
+    color: #1877f2;
+    transition: all 0.5s ease;
+}
+
+.custom-container form fieldset .icon-container .fa-google:hover {
+    color: #ea4335;
+    transition: all 0.5s ease;
+}
+
+.custom-container form fieldset .icon-container .fa-linkedin-in:hover {
+    color: #0a66c2;
+    transition: all 0.5s ease;
+}
+
+.custom-container form fieldset .input-field i {
+    font-size: 1.2rem;
+}
+
+.custom-container form fieldset .shop-field .custom-icon,
+.custom-container form fieldset .contact-field .custom-icon,
+.custom-container form fieldset .email-field .custom-icon,
+.custom-container form fieldset .input-field .address-field .custom-icon,
+.custom-container form fieldset .input-field .password-field .custom-icon,
+.custom-container form fieldset .input-field .username-field .custom-icon {
+    top: 50%;
+    left: 3%;
+    transform: translateY(-50%);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+    font-size: 1.1rem;
+    padding: 0.6rem 0 0.6rem 3rem;
+}
+
+.custom-container form fieldset .input-field .btn-container .btn {
+    background-color: transparent;
+    border: 3px solid var(--primary-color);
+    padding: 0.7rem 4rem;
+    outline: none;
+    color: var(--primary-color);
+    border-radius: 50px;
+    font-family: var(--primary-font);
+}
+
+.custom-container form fieldset .input-field .btn-container .btn:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.custom-container form fieldset .input-field .btn-container .btn:focus {
+    box-shadow: none;
+}
+
+
+@media screen and (max-width: 767px) {
+    body {
+        width: 100%;
+    }
+
+    .custom-container form {
+        width: 80% !important;
+        margin: auto;
+    }
+}
+
+
+@media screen and (max-width: 456px) {
+
+    .custom-container form fieldset h4 {
+        font-size: 1.2rem;
+    }
+
+    body {
+        width: 100%;
+    }
+
+    .custom-container form {
+        width: 100% !important;
+    }
+
+    form .username-field {
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    form .form-control {
+        font-size: 0.8rem;
+    }
+
+    form .username-field .form-control:first-of-type {
+        margin-bottom : 1rem;
+        margin-left: 0.5rem;
+    }
+
+    .custom-container form fieldset .username-field .custom-icon{
+        top: 20% !important;
+    }
+
+}
+
+

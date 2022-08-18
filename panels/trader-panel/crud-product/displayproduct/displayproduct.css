@@ -1,0 +1,185 @@
+@import "../../../../globalcss/fonts.css";
+@import "../../../../globalcss/colors.css";
+@import "../../../../globalcss/global.css";
+
+body {
+    font-family: var(--primary-font);
+    overflow-x: auto;
+}
+
+.container-fluid .row {
+    min-height: 100vh;
+}
+
+.container-fluid .row .col-xl-2 {
+    background-color: var(--totalcart-color);
+}
+
+/** Trader Panel Column **/
+.container-fluid .row .col-xl-2 .sidebar-container .menubar .nav .nav-item .active {
+    padding: 1.5rem;
+    font-size: 1.2rem;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.207);
+}
+
+.container-fluid .row .col-xl-2 .sidebar-container .menubar .nav .panel-links .nav-link {
+    color: var(--gental-white);
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.207);
+    padding: 1rem 0rem;
+}
+
+.container-fluid .row .col-xl-2 .sidebar-container .menubar .nav .panel-links .nav-link:hover {
+    color: var(--primary-color);
+}
+
+.container-fluid .row .col-xl-2 .sidebar-container .menubar .nav .panel-links .nav-link i {
+    margin-left: 1rem;
+    margin-right: 0.3rem;
+
+}
+
+.container-fluid .row .col-xl-2 .sidebar-container .menubar .nav .panel-links .nav-link .fa-tachometer-alt,
+.container-fluid .row .col-xl-2 .sidebar-container .menubar .nav .panel-links .nav-link .fa-tv {
+    margin-right: 0.1rem;
+}
+
+
+.container-fluid .row .col-xl-2 .sidebar-container .menubar .nav .panel-links .nav-link .fa-arrow-circle-left {
+    margin-right: 0.3rem;
+}
+
+
+main .container-fluid .row .col-xl-10 .logout-section {
+    top: 100%;
+    right: 6.25%;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.block {
+    opacity: 1 !important;
+    pointer-events: all !important;
+    animation: slide-from-down 0.3s ease-in;
+}
+
+@keyframes slide-from-down {
+    0% {
+        top: 90%;
+    }
+
+    100% {
+        top: 100%;
+    }
+}
+
+main .container-fluid .row .col-xl-10 .logout-section p {
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+main .container-fluid .row .col-xl-10 .logout-section p .btn {
+    font-weight: bold;
+}
+
+main .container-fluid .row .col-xl-10 .logout-section p::after {
+    content: "";
+    position: absolute;
+    top: -10%;
+    left: 40%;
+    transform: rotate(45deg);
+    width: 20px;
+    height: 20px;
+    background-color: black;
+}
+
+
+
+
+/** Add Product Container Column **/
+
+main .container-fluid .row .col-xl-10 {
+    background-color: rgb(251, 251, 251);
+}
+
+
+/** Header Profile Section **/
+main .container-fluid .row .col-xl-10 .user-profile-header {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 5px 0px 15px rgb(208, 208, 208);
+    width: 2000px;
+}
+
+main .container-fluid .row .col-xl-10 .user-profile-header .trader-type {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 2rem;
+    margin-top : 1rem;
+    color: #747474;
+}
+
+main .container-fluid .row .col-xl-10 .user-profile-header img {
+    border: 2px solid var(--primary-color);
+    border-radius: 50px;
+    object-fit: cover;
+    margin-right: 10rem;
+    cursor: pointer;
+}
+
+
+main .container-fluid .row .col-xl-10 .table-container {
+    width: 1900px;
+    margin: 5rem 2rem 5rem 3rem;
+    border-radius: 15px !important;
+}
+
+main .container-fluid .row .col-xl-10 .table-container .table{
+    box-shadow: 0 0 50px 1px #dcdcdc;
+}
+
+
+main .container-fluid .row .col-xl-10 .table-container table tr {
+    background: white;
+    padding-top: 1rem;
+}
+
+main .container-fluid .row .col-xl-10 .table-container table tr img {
+    width: 140px;
+    height: 80px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+
+main .container-fluid .row .col-xl-10 .table-container table th {
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding-top: 1rem;
+    background-color: var(--totalcart-color);
+    color: white;
+}
+
+main .container-fluid .row .col-xl-10 .table-container table th:first-of-type {
+    border-top-left-radius: 10px;
+    overflow: hidden;
+}
+
+main .container-fluid .row .col-xl-10 .table-container table th:last-of-type {
+    border-top-right-radius: 10px;
+    overflow: hidden;
+}
+
+
+main .container-fluid .row .col-xl-10 .table-container table tr .action {
+    white-space: nowrap;
+}
+

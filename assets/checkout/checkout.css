@@ -1,0 +1,93 @@
+@import '../../globalcss/colors.css';
+@import '../../globalcss/fonts.css';
+@import '../../globalcss/global.css';
+
+body {
+    width: 100vw;
+    height: 100vh !important;
+    overflow: hidden;
+}
+
+#pre-loader {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background: #fff url('../../images/homepage/preloader/Ripple-1s-303px.gif') no-repeat center;
+    z-index: 11111111;
+    display: none;
+}
+
+.custom-container {
+    height: 100%;
+    width: 100%;
+    background-image: url('../../assets/form/bg-image/formbg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.collection_slots{
+    width: 40%;
+    margin-left: 1rem;
+
+}
+
+.from-label{
+    font-size: 1.2rem;
+}
+
+option{
+    text-align: center;
+}
+
+.coll_btn{
+    padding-left: 3rem;
+    padding-right: 3rem;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 426px) {
+    body {
+        width: 90vw;
+        margin: auto;
+    }
+
+    .payment-container form label{
+        white-space: nowrap !important;
+    }
+}
+
+@media screen and (max-width: 376px) {
+
+    :root {
+        font-size: 14px;
+    }
+
+    body {
+        width: 90vw;
+        margin: auto;
+    }
+
+
+    .payment-container form label{
+        white-space: nowrap !important;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+
+    :root {
+        font-size: 12px;
+    }
+
+    body {
+        width: 90vw;
+        margin: auto;
+    }
+
+    .payment-container form label{
+        white-space: nowrap !important;
+    }
+}

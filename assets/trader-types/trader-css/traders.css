@@ -1,0 +1,605 @@
+@import "../../../globalcss/fonts.css";
+@import "../../../globalcss/colors.css";
+@import "../../../globalcss/global.css";
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/** Navbar Section **/
+
+header {
+    position: relative;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.navbar {
+    z-index: 10;
+    height: 20vh;
+    background-color: transparent;
+}
+
+.navbar .navbar-brand img {
+    width: 150px;
+    margin-left: 15px;
+}
+
+.navbar .navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+.navbar a {
+    color: black;
+}
+
+.navbar .collapse .navbar-nav .dropdown .dropdown-menu a:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.navbar .collapse .navbar-nav .dropdown .dropdown-menu a {
+    padding: 1rem 0rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.navbar .collapse .navbar-nav .nav-item .nav-link {
+    color: whitesmoke;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.navbar .collapse .navbar-nav .nav-item .nav-link:hover {
+    color: rgba(242, 242, 242, 0.59);
+    transition: all 0.5s ease;
+}
+
+.navbar .collapse .navbar-nav .nav-item .cart {
+    font-size: 1.4rem;
+    border: 3px solid var(--primary-color);
+    color: whitesmoke;
+    display: inline;
+}
+
+/** Trader image section **/
+
+.bg-image {
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.bg-image img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+.trader-description {
+    width: 40%;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.trader-description h2 {
+    font-weight: bold;
+    color: black;
+}
+
+/** Breadcrumb section **/
+.sidebar-section .container-fluid .row .breadcrumb-section .breadcrumb {
+    background-color: transparent;
+}
+
+.sidebar-section .container-fluid .row .breadcrumb-section .breadcrumb .breadcrumb-item a {
+    font-size: 1.2rem;
+}
+
+.sidebar-section .container-fluid .row .breadcrumb-section .breadcrumb .active {
+    font-size: 1.2rem;
+}
+
+/** Search and Sort section **/
+
+main {
+    width: 85%;
+    margin: 0rem auto;
+}
+
+.sidebar-section .container-fluid form .search-field {
+    flex: 2;
+}
+
+.sidebar-section .container-fluid form .btn-container .btn {
+    background: var(--primary-color);
+    color: white;
+    padding: 0.5rem 2rem;
+}
+
+.sidebar-section .container-fluid form .btn-container .btn:focus {
+    box-shadow: none;
+}
+
+/** Products Section **/
+.traders-products {
+    padding: 2rem 0;
+}
+
+.traders-products .container-fluid .products {
+    width: 350px;
+}
+
+.traders-products .container-fluid .products .individual-product .img-container img {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.traders-products .container-fluid .products .individual-product .img-container .fa-search {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2rem;
+    color: white;
+    background-color: var(--primary-color);
+    padding: 0.8rem 0.8rem;
+    border-radius: 50px;
+    z-index: -1;
+}
+
+.traders-products .container-fluid .products .individual-product .img-container:hover img {
+    filter: brightness(0.8);
+}
+
+.traders-products .container-fluid .products .individual-product .img-container:hover img:hover+.fa-search {
+    z-index: 111;
+}
+
+.traders-products .container-fluid .products .individual-product .img-container .fa-search:hover {
+    z-index: 111;
+}
+
+.traders-products .container-fluid .products .individual-product .info> .price-content {
+    font-size: 1.5rem;
+}
+
+.traders-products .container-fluid .products .individual-product .btn-container>.btn {
+    padding: 0.5rem 3rem;
+}
+
+/** Individual Products **/
+
+.traders-products .container-fluid .products {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+/** Footer Section **/
+footer {
+    color: white;
+    padding: 4rem 0rem;
+    background-color: rgba(23, 27, 41, 0.9);
+}
+
+footer .container-fluid {
+    width: 80%;
+    margin: auto;
+}
+
+footer .container-fluid .row .col-xl-2 ul .text-uppercase {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+footer .container-fluid .row .col-xl-4 .text-uppercase {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+footer .container-fluid .row .col-xl-3 .input-container input[type="text"] {
+    outline: none;
+    border: none;
+    padding: 0.5rem 1rem;
+}
+
+footer .container-fluid .row .col-xl-3 .input-container .btn {
+    border-radius: 0px;
+    background-color: var(--primary-color);
+    padding: 0.5rem 1.2rem;
+    color: white;
+}
+
+footer .container-fluid .row .col-xl-3 .text-uppercase {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+footer .container-fluid .row .info .social-media-links .fa-twitter {
+    color: #00acee;
+}
+
+footer .container-fluid .row .info .social-media-links .fa-linkedin {
+    color: #0e76a8;
+}
+
+footer .container-fluid .row .info .mail,
+footer .container-fluid .row .info .phone {
+    font-size: 1.1rem;
+}
+
+.sorry {
+    font-size: 2rem;
+    color: #bdc3c7;
+}
+
+
+/** Media Queries **/
+/** Laptop Device Width : 1024 Height : 901 **/
+@media screen and (max-width: 1024px) {
+    body {
+        width: 1024px;
+    }
+
+    .trader-description {
+        width: 60% !important;
+    }
+
+    .sidebar-section .container-fluid .row {
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    /** Footer Section **/
+    footer .container-fluid .row .col-xl-3 .input-container input[type="text"] {
+        outline: none;
+        border: none;
+        padding: 0.5rem 0.5rem;
+    }
+
+    footer .container-fluid .row .col-xl-3 .input-container .btn {
+        border-radius: 0px;
+        background-color: var(--primary-color);
+        padding: 0.5rem 0.8rem;
+        color: white;
+    }
+
+    footer .container-fluid .row .col-xl-3 .text-uppercase {
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+
+    footer .container-fluid .row .info .social-media-links .fa-twitter {
+        color: #00acee;
+    }
+
+    footer .container-fluid .row .info .social-media-links .fa-linkedin {
+        color: #0e76a8;
+    }
+
+    footer .container-fluid .row .info .mail,
+    footer .container-fluid .row .info .phone {
+        font-size: 1.1rem;
+    }
+}
+
+
+/** Media Queries **/
+/** Tablet Device Width : 768 Height : 676 **/
+@media screen and (max-width: 768px) {
+    body {
+        width: 100vw !important;
+    }
+
+    header {
+        overflow: visible;
+    }
+
+    .navbar .navbar-nav {
+        border-radius: 15px;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding : 1rem 0;
+    }
+
+    .navbar .nav-item {
+        padding : 0.5rem 0;
+    }
+
+    .navbar .nav-item .nav-link {
+        color: white !important;
+    }
+
+    .navbar .collapse .navbar-nav .dropdown .dropdown-menu a {
+        color :black !important;
+    }
+
+
+    .carousel-container img {
+        height: 100vh;
+    }
+
+    .trader-description {
+        width: 70% !important;
+    }
+
+    .sidebar-section .container-fluid .row {
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    /** Footer Section **/
+    footer .container-fluid .row .col-6 ul .text-uppercase {
+        font-size: 0.8rem;
+    }
+
+    footer .container-fluid .row .col-6 ul li a {
+        font-size: 0.6rem;
+    }
+
+    footer {
+        padding: 3rem 0;
+    }
+
+    footer .container-fluid {
+        width: 90%;
+    }
+
+    footer .container-fluid .row .col-xl-3 .text-uppercase {
+        white-space: nowrap;
+        font-size: 0.8rem;
+    }
+
+    footer .container-fluid .row .col-xl-3 .input-container input[type="text"] {
+        outline: none;
+        border: none;
+        padding: 0.3rem 0.3rem;
+        width: 120px;
+        font-size: 0.8rem;
+    }
+
+    footer .container-fluid .row .col-xl-3 .input-container .btn {
+        border-radius: 0px;
+        background-color: var(--primary-color);
+        padding: 0.5rem 1rem;
+        color: white;
+    }
+
+    footer .container-fluid .row .info .social-media-links .fa-twitter {
+        color: #00acee;
+        font-size: 0.9rem;
+        margin: 2px !important;
+    }
+
+    footer .container-fluid .row .info .social-media-links .fa-linkedin {
+        color: #0e76a8;
+        font-size: 0.9rem;
+        margin: 2px !important;
+    }
+
+    footer .container-fluid .row .info .social-media-links .fa-pinterest {
+        color: #0e76a8;
+        font-size: 0.9rem;
+        margin: 2px !important;
+    }
+
+    footer .container-fluid .row .info .social-media-links .fa-facebook-f {
+        color: #0e76a8;
+        font-size: 0.9rem;
+        margin: 2px !important;
+    }
+
+    footer .container-fluid .row .info .mail,
+    footer .container-fluid .row .info .phone {
+        font-size: 0.7rem !important;
+    }
+
+
+    footer .container-fluid .row .col-xl-2{
+        margin: 0 !important;
+    }
+}
+
+
+
+/** Media Queries **/
+/** Tablet Device Width : 425 Height : 667 **/
+@media screen and (max-width: 426px) {
+    body {
+        width: 100vw !important;
+    }
+
+    .trader-description .font-rubik {
+        font-size: 0.9rem;
+    }
+
+    .sidebar-section .container-fluid .row {
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .sidebar-section .container-fluid form .search-field {
+        width: 150px !important;
+    }
+
+    .sidebar-section .container-fluid form .sort-field {
+        width: 100px !important;
+    }
+    /** Footer Section **/
+    footer .container-fluid {
+        width: 90%;
+    }
+
+    .col-6 {
+        margin-top: 1rem;
+    }
+
+    footer .container-fluid .row .col-6 {
+        margin : 0 !important;
+        padding: 0 !important;
+    }
+
+    footer .container-fluid .row .col-xl-3 .input-container input[type="text"] {
+        outline: none;
+        border: none;
+        padding: 0.3rem 0.8rem;
+        width: 130px;
+        font-size: 0.8rem;
+    }
+
+
+    footer .container-fluid .row .info {
+        margin-top: 1.8rem !important;
+    }
+
+
+}
+
+
+/** Media Queries **/
+/** Tablet Device Width : 375 Height : 667 **/
+@media screen and (max-width: 376px) {
+    body {
+        width: 100vw !important;
+    }
+
+    .navbar .navbar-brand img {
+        width: 100px;
+        margin-left: 15px;
+    }
+
+    .trader-description {
+        width: 80% !important;
+    }
+
+    .trader-description .font-rubik {
+        font-size: 0.8rem;
+    }
+
+    .sidebar-section .container-fluid .row {
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .sidebar-section .container-fluid form .search-field {
+        width: 100px !important;
+    }
+
+    .sidebar-section .container-fluid form .sort-field {
+        width: 80px !important;
+    }
+
+    /** Footer Section **/
+    footer .container-fluid {
+        width: 90%;
+    }
+
+    .col-6 {
+        margin-top: 1rem;
+    }
+
+    footer .container-fluid .row .col-6 {
+        margin : 0 !important;
+        padding: 0 !important;
+    }
+
+    footer .container-fluid .row .col-xl-3 .input-container input[type="text"] {
+        outline: none;
+        border: none;
+        padding: 0.3rem 0.8rem;
+        width: 120px;
+        font-size: 0.8rem;
+    }
+
+
+    footer .container-fluid .row .info {
+        margin-top: 1.8rem !important;
+    }
+
+}
+
+
+/** Media Queries **/
+/** Tablet Device Width : 320 Height : 667 **/
+@media screen and (max-width: 321px) {
+    body {
+        width: 100vw !important;
+    }
+
+    .sidebar-section .container-fluid .row {
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .sidebar-section .container-fluid .row .breadcrumb-section .breadcrumb .breadcrumb-item  a{
+        font-size: 1rem;
+    }
+
+    .sidebar-section .container-fluid .row .breadcrumb-section .breadcrumb .breadcrumb-item{
+        font-size: 1rem;
+    }
+
+
+    .sidebar-section .container-fluid form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sidebar-section .container-fluid form .search-field {
+        width: 200px !important;
+        margin-bottom: 1rem;
+    }
+
+    .sidebar-section .container-fluid form .sort-field {
+        width: 200px !important;
+        margin-bottom: 1rem;
+    }
+
+    footer .container-fluid {
+        width: 90% !important;
+    }
+
+    footer .container-fluid .row .col-6 {
+        margin : 0 !important;
+        padding: 0 !important;
+    }
+
+    footer .container-fluid .row .col-xl-3 .input-container input[type="text"] {
+        padding: 0.2rem 0.3rem;
+        width: 100px;
+    }
+
+
+
+}

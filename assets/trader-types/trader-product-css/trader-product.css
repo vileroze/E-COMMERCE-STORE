@@ -1,0 +1,689 @@
+@import "../../../globalcss/global.css";
+@import "../../../globalcss/fonts.css";
+@import "../../../globalcss/colors.css";
+
+.btn:focus {
+    box-shadow: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/** Navbar Section **/
+
+header {
+    height: 35vh;
+}
+
+header .bg-image {
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+}
+
+header .bg-image img {
+    height: 35vh;
+    object-fit: cover;
+    filter: brightness(0.4);
+}
+
+.navbar {
+    z-index: 10;
+    height: 20vh;
+}
+
+.navbar .navbar-brand img {
+    width: 150px;
+    margin-left: 15px;
+}
+
+.navbar .navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+.navbar a {
+    color: black;
+}
+
+.navbar .collapse .navbar-nav .dropdown .dropdown-menu a:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.navbar .collapse .navbar-nav .dropdown .dropdown-menu a {
+    padding: 1rem 0rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.navbar .collapse .navbar-nav .nav-item .nav-link {
+    color: var(--gental-white);
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.navbar .collapse .navbar-nav .nav-item .cart {
+    font-size: 1.4rem;
+    border: 3px solid var(--primary-color);
+    display: inline;
+}
+
+/** BreadCrumbs Section **/
+
+.breadcrumb-navbar {
+    position: absolute;
+    top: 65%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.breadcrumb-navbar .breadcrumb {
+    background-color: transparent;
+    margin: 2rem 0rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 0px;
+    font-size: 1.2rem;
+}
+
+.breadcrumb-navbar .breadcrumb .breadcrumb-item a,
+.breadcrumb-navbar .breadcrumb .breadcrumb-item {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--breadcrumb-color);
+}
+
+.breadcrumb-navbar .breadcrumb .breadcrumb-item {
+    color: var(--gental-white);
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    color: whitesmoke !important;
+    content: ">>" !important;
+}
+
+/** Add to Cart Section **/
+.cart-info .img-container .row .col-xl-7 p {
+    font-size: 1.5rem;
+}
+
+.cart-info .img-container .row .col-xl-7 .pricing-container p {
+    font-size: 1.8rem;
+}
+
+.cart-info .img-container .row .col-xl-7 .pricing-container .my-0 {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.cart-info .img-container .row .col-xl-7 .pricing-container p>del {
+    color: rgb(184, 183, 183);
+}
+
+.cart-info .img-container .row .col-xl-7 .pricing-container .my-0>.mx-3 {
+    font-size: 0.9rem;
+}
+
+.cart-info .img-container .row .col-xl-7 .pricing-container .discount>span {
+    font-size: 1.3rem;
+    color: rgb(184, 183, 183);
+    vertical-align: middle;
+    margin-left: 0.5rem;
+    padding: 0.3rem 0.5rem;
+    border: 2px solid var(--primary-color);
+}
+
+.cart-info .img-container .row .col-xl-7 .quantity>input {
+    box-shadow: none !important;
+    font-size: 1.4rem;
+    border-radius: 0;
+    border: none;
+    background-color: white !important;
+}
+
+.cart-info .img-container .row .col-xl-7 .quantity>.btn {
+    padding: 0rem 1rem;
+}
+
+
+.cart-info .img-container .row .col-xl-7 .order-btn__container .btn {
+    background: var(--primary-color);
+    border: none;
+    padding: 0.7rem 3rem;
+}
+
+/** ================================================== **/
+
+.hr {
+    width: 180px;
+    height: 3px;
+    background-color: var(--primary-color);
+    margin: 1rem auto;
+}
+
+/** Items description Section **/
+
+.item-description .row .col-xl-6 #accordion .card {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}
+
+.item-description .row .col-xl-6 #accordion .card .card-header {
+    cursor: pointer;
+    background: transparent;
+}
+
+.item-description .row .col-xl-6 #accordion .card .card-header p,
+.item-description .row .col-xl-6 #accordion .card .card-header i {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    font-weight: bolder;
+}
+
+/** ================================================= **/
+
+/** May like items **/
+
+
+.splide {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.splide__arrow--next {
+    right: -1em;
+}
+
+.splide__arrow--prev {
+    left: -1em;
+}
+
+.splide__slide .slider_product .img-container {
+    border-radius: 5px !important;
+    width: 350px !important;
+    height: 250px !important;
+    overflow: hidden;
+}
+
+.splide__slide .slider_product .img-container img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+.splide__slide .slider_product .img-container img:hover {
+    transform: scale(1.2);
+    transition: all 0.3s ease-in;
+}
+
+
+
+.splide__slide .slider_product .prod-name .font-rubik:first-of-type {
+    font-size: 1.1rem;
+}
+
+.splide__slide .slider_product .prod-name .font-rubik:last-of-type {
+    font-size: 1.5rem;
+}
+
+
+/** Product Rating Section **/
+
+.product-review .row .col-xl-4 .text-center {
+    font-size: 6rem;
+}
+
+/** Product Review Section**/
+
+.comments .container-fluid .individual-comments .customer-rating .username {
+    font-size: 1.3rem;
+}
+
+.comments .container-fluid .individual-comments .description {
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+    .liked-items {
+        width: 100vw !important;
+    }
+}
+
+.review-container {
+    display: none;
+}
+
+.review-container.show-review {
+    display: block;
+}
+
+.review-container .row .col-xl-8 form textarea#reviews {
+}
+
+.review-container .row .col-xl-8 form .icon-container .fas,
+.review-container .row .col-xl-8 form .icon-container .far{
+    cursor: pointer;
+}
+
+/** Footer Section **/
+footer {
+    color: white;
+    padding: 4rem 0rem;
+    background-color: rgba(23, 27, 41, 0.9);
+}
+
+footer .container-fluid {
+    width: 80%;
+    margin: auto;
+}
+
+footer .container-fluid .row .col-xl-2 ul .text-uppercase {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+footer .container-fluid .row .col-xl-4 .text-uppercase {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+footer .container-fluid .row .col-xl-3 .input-container input[type="text"] {
+    outline: none;
+    border: none;
+    padding: 0.5rem 1rem;
+}
+
+footer .container-fluid .row .col-xl-3 .input-container .btn {
+    border-radius: 0px;
+    background-color: var(--primary-color);
+    padding: 0.5rem 1.2rem;
+    color: white;
+}
+
+footer .container-fluid .row .col-xl-3 .text-uppercase {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+footer .container-fluid .row .info .social-media-links .fa-twitter {
+    color: #00acee;
+}
+
+footer .container-fluid .row .info .social-media-links .fa-linkedin {
+    color: #0e76a8;
+}
+
+footer .container-fluid .row .info .mail,
+footer .container-fluid .row .info .phone {
+    font-size: 1.1rem;
+}
+
+.out-of-stock {
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-width: 2px !important;
+    padding: 0.3rem;
+    width: 35%;
+    margin-top: 2rem;
+}
+
+
+
+/** Media Queries **/
+/** Laptop Device Width : 1024 Height : 901 **/
+@media screen and (max-width: 1024px) {
+
+    body {
+        width: 1024px;
+    }
+    /** Footer Section **/
+    footer .container-fluid .row .col-xl-3 .input-container input[type="text"] {
+        outline: none;
+        border: none;
+        padding: 0.5rem 0.5rem;
+    }
+
+    footer .container-fluid .row .col-xl-3 .input-container .btn {
+        border-radius: 0px;
+        background-color: var(--primary-color);
+        padding: 0.5rem 0.8rem;
+        color: white;
+    }
+
+    footer .container-fluid .row .col-xl-3 .text-uppercase {
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+
+    footer .container-fluid .row .info .social-media-links .fa-twitter {
+        color: #00acee;
+    }
+
+    footer .container-fluid .row .info .social-media-links .fa-linkedin {
+        color: #0e76a8;
+    }
+
+    footer .container-fluid .row .info .mail,
+    footer .container-fluid .row .info .phone {
+        font-size: 1.1rem;
+    }
+}
+
+
+/** Media Queries **/
+/** Tablet Device Width : 768 Height : 676 **/
+@media screen and (max-width: 768px) {
+
+    body {
+        width: 100vw !important;
+    }
+
+    header {
+        overflow: visible;
+    }
+
+    .navbar .navbar-nav {
+        border-radius: 15px;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding : 1rem 0;
+    }
+
+    .navbar .nav-item {
+        padding : 0.5rem 0;
+    }
+
+    .navbar .nav-item .nav-link {
+        color: white !important;
+    }
+
+    .navbar .collapse .navbar-nav .dropdown .dropdown-menu a {
+        color :black !important;
+    }
+
+    .img-container .row .col-xl-5 img {
+        width: 500px !important;
+    }
+
+    .img-container .row .col-xl-7 form fieldset .prod-name {
+        margin-top: 1rem;
+    }
+
+    /** Footer Section **/
+    footer .container-fluid .row .col-6 ul .text-uppercase {
+        font-size: 0.8rem;
+    }
+
+    footer .container-fluid .row .col-6 ul li a {
+        font-size: 0.6rem;
+    }
+
+    footer {
+        padding: 3rem 0;
+    }
+
+    footer .container-fluid {
+        width: 90%;
+    }
+
+    footer .container-fluid .row .col-xl-3 .text-uppercase {
+        white-space: nowrap;
+        font-size: 0.8rem;
+    }
+
+    footer .container-fluid .row .col-xl-3 .input-container input[type="text"] {
+        outline: none;
+        border: none;
+        padding: 0.3rem 0.3rem;
+        width: 120px;
+        font-size: 0.8rem;
+    }
+
+    footer .container-fluid .row .col-xl-3 .input-container .btn {
+        border-radius: 0px;
+        background-color: var(--primary-color);
+        padding: 0.5rem 1rem;
+        color: white;
+    }
+
+    footer .container-fluid .row .info .social-media-links .fa-twitter {
+        color: #00acee;
+        font-size: 0.9rem;
+        margin: 2px !important;
+    }
+
+    footer .container-fluid .row .info .social-media-links .fa-linkedin {
+        color: #0e76a8;
+        font-size: 0.9rem;
+        margin: 2px !important;
+    }
+
+    footer .container-fluid .row .info .social-media-links .fa-pinterest {
+        color: #0e76a8;
+        font-size: 0.9rem;
+        margin: 2px !important;
+    }
+
+    footer .container-fluid .row .info .social-media-links .fa-facebook-f {
+        color: #0e76a8;
+        font-size: 0.9rem;
+        margin: 2px !important;
+    }
+
+    footer .container-fluid .row .info .mail,
+    footer .container-fluid .row .info .phone {
+        font-size: 0.7rem !important;
+    }
+
+
+    footer .container-fluid .row .col-xl-2{
+        margin: 0 !important;
+    }
+}
+
+
+
+/** Media Queries **/
+/** Tablet Device Width : 425 Height : 667 **/
+@media screen and (max-width: 426px) {
+
+    body {
+        width: 100vw !important;
+    }
+
+    .navbar .navbar-brand img {
+        width: 100px;
+        margin-left: 15px;
+    }
+
+    .img-container .row .col-xl-5 img {
+        width: 300px !important;
+    }
+
+    .img-container .row .col-xl-7 form fieldset .prod-name {
+        margin-top: 1rem;
+        font-size: 1.2rem;
+    }
+
+    .breadcrumb-navbar .breadcrumb .breadcrumb-item a {
+        font-size: 1.2rem;
+    }
+
+    .breadcrumb-navbar .breadcrumb .breadcrumb-item {
+        font-size: 1.2rem;
+    }
+
+    .cart-info .img-container .row .col-xl-7 p {
+        white-space: nowrap;
+    }
+
+
+    main {
+        width: 100% !important;
+    }
+
+    .item-description .row .col-10 {
+        margin-top: 1rem;
+    }
+
+    .product-review > .font-rale.text-center {
+        font-size: 1.3rem;
+    }
+
+    .product-review {
+        width: 90% !important;
+    }
+
+    /** Footer Section **/
+    footer .container-fluid {
+        width: 90%;
+    }
+
+    .col-6 {
+        margin-top: 1rem;
+    }
+
+    footer .container-fluid .row .col-6 {
+        margin : 0 !important;
+        padding: 0 !important;
+    }
+
+    footer .container-fluid .row .col-xl-3 .input-container input[type="text"] {
+        outline: none;
+        border: none;
+        padding: 0.3rem 0.8rem;
+        width: 130px;
+        font-size: 0.8rem;
+    }
+
+
+    footer .container-fluid .row .info {
+        margin-top: 1.8rem !important;
+    }
+
+
+}
+
+
+/** Media Queries **/
+/** Tablet Device Width : 375 Height : 667 **/
+@media screen and (max-width: 376px) {
+    body {
+        width: 100vw !important;
+    }
+
+    .item-description {
+        width: 100% !important;
+    }
+
+    /** Footer Section **/
+    footer .container-fluid {
+        width: 90%;
+    }
+
+    .col-6 {
+        margin-top: 1rem;
+    }
+
+    footer .container-fluid .row .col-6 {
+        margin : 0 !important;
+        padding: 0 !important;
+    }
+
+    footer .container-fluid .row .col-xl-3 .input-container input[type="text"] {
+        outline: none;
+        border: none;
+        padding: 0.3rem 0.8rem;
+        width: 120px;
+        font-size: 0.8rem;
+    }
+
+
+    footer .container-fluid .row .info {
+        margin-top: 1.8rem !important;
+    }
+
+}
+
+
+/** Media Queries **/
+/** Tablet Device Width : 320 Height : 667 **/
+@media screen and (max-width: 321px) {
+    body {
+        width: 100vw !important;
+    }
+
+    .navbar .navbar-brand img {
+        width: 80px;
+    }
+
+    .img-container .row .col-xl-5 img {
+        width: 200px !important;
+    }
+
+    .img-container .row .col-xl-7 form fieldset .prod-name {
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+
+    .breadcrumb-navbar .breadcrumb .breadcrumb-item a {
+        font-size: 0.8rem;
+    }
+
+    .breadcrumb-navbar .breadcrumb .breadcrumb-item {
+        font-size: 0.8rem;
+    }
+
+    .cart-info .img-container .row .col-xl-7 .mr-2 {
+        white-space: nowrap;
+        font-size: 1.2rem !important;
+    }
+
+
+    main {
+        width: 100% !important;
+    }
+
+    .item-description .row .col-10 {
+        margin-top: 1rem;
+    }
+
+    .product-review > .font-rale.text-center {
+        font-size: 1.3rem;
+    }
+
+    .product-review {
+        width: 90% !important;
+    }
+
+    footer .container-fluid {
+        width: 90% !important;
+    }
+
+    footer .container-fluid .row .col-6 {
+        margin : 0 !important;
+        padding: 0 !important;
+    }
+
+    footer .container-fluid .row .col-xl-3 .input-container input[type="text"] {
+        padding: 0.2rem 0.3rem;
+        width: 100px;
+    }
+
+    footer .container-fluid .row .col-xl-3 .text-uppercase {
+        font-size: 0.6rem !important;
+    }
+
+
+}
